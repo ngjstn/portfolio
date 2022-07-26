@@ -150,6 +150,7 @@
     "queue-microtask": "^1.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
     "react-is": "^16.13.1",
     "regenerator-runtime": "^0.13.9",
     "regexp.prototype.flags": "^1.4.3",
