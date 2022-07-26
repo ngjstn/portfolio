@@ -17,6 +17,8 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5'
+import { Code } from '@chakra-ui/react'
+// import { useColorModeValue } from '@chakra-ui/react'
 
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
@@ -72,9 +74,9 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          {/* <LinkItem href="/works" path={path}>
-            Works
-          </LinkItem> */}
+          <LinkItem href="/projects" path={path}>
+            <Code colorScheme={useColorModeValue('purple', 'blue')}>projects</Code>
+          </LinkItem>
           <LinkItem
             target="_blank"
             href="https://github.com/ngjstn"
@@ -128,9 +130,9 @@ const Navbar = props => {
                 {/* <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink> */}
-                {/* <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink> */}
+                <NextLink href="/projects" passHref>
+                  <MenuItem as={Link}>projects</MenuItem>
+                </NextLink>
                 {/* <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink> */}

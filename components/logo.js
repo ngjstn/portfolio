@@ -18,7 +18,7 @@ padding: 10px;
 `
 
 const Logo = () => {
-    const footPrintImg = `/images/${useColorModeValue('sad_blob', 'sad_blob')}.png` 
+    const footPrintImg = `/images/${useColorModeValue('blob', 'sad_blob')}.png` 
 
     return (
         <Link href="/">
@@ -26,11 +26,11 @@ const Logo = () => {
                 <LogoBox>
                     <Image src={footPrintImg} width={20} height={20} alt="logo.js" /> 
                     <Text
-                        color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+                        color={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
                         fontFamily='M PLUS Rounded 1c'
                         fontWeight="bold"
                         ml={3}>
-                            jstn_ng 
+                            <code>jstn_ng</code>
                     </Text>
                 </LogoBox>
             </a>
