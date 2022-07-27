@@ -1,9 +1,13 @@
-import { Container, Heading, Box, Image, useColorModeValue } from '@chakra-ui/react'
+import { Container, Heading, Box, Image, useColorModeValue, Button, Code, Link, ListItem, List } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import { Code } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-
+import { IoLogoGithub, IoLogoInstagram } from 'react-icons/io5'
+import { GiSittingDog } from 'react-icons/gi'
+import { FiGithub } from 'react-icons/fi'
+import { FaLinkedinIn } from 'react-icons/fa'
+import { RiInstagramFill } from 'react-icons/ri'
+// import VoxelDog from '../components/voxel-dog'
 
 const Page = () => {
     return (
@@ -14,7 +18,7 @@ const Page = () => {
             bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} 
             p={3} align="center" 
             mb={6}>
-                <code>{useColorModeValue('ouch turn the lights off >:(', 'idk what im doing im not a frontend dev lol')}</code>
+                <code>{useColorModeValue('ouch turn the lights off >:(', 'idk what im doing lol')}</code>
             </Box>
 
             <Box display={{md:'flex'}}>
@@ -54,24 +58,92 @@ const Page = () => {
             >
             <p><code><u>About Me</u></code></p>
             </Heading>
-            <Paragraph>Hello there! I'm a 3rd year Computer Engineering Student at UBC, interested in all things firmware, software, or web related. 
+            <Paragraph>
+                    Hello there! I'm a 3rd year Computer Engineering Student at UBC, interested in all things firmware, software, or web related. 
                     I'm currently working an 8 month co-op term with Motorola Solutions, Avigilon, handling the automation and development of our test
                     frameworks to validate the firmware in our security IP camera products and manufacturing processes. After this current work term, 
                     I'll be looking for another co-op opportunity to try out something new in January.{' '}
             </Paragraph>
             </Section>
 
-            {/* <Section delay={0.2}>
-                <Heading 
+            <Section delay={0.1}>
+                <List>
+                <ListItem>
+                    <Link href="https://github.com/ngjstn" target="_blank">
+                            <Button
+                                variant="ghost"
+                                leftIcon={<FiGithub />}
+                                colorScheme={useColorModeValue('purple', 'blue')}
+                            >    
+                            Github
+                            </Button>
+                    </Link>
+                </ListItem>
+                <ListItem>
+                    <Link href="https://www.linkedin.com/in/ngjstn/" target="_blank">
+                            <Button
+                                variant="ghost"
+                                leftIcon={<FaLinkedinIn />}
+                                colorScheme={useColorModeValue('purple', 'blue')}
+                            >    
+                            LinkedIn
+                            </Button>
+                    </Link>
+                </ListItem>
+                <ListItem>
+                    <Link href="https://www.instagram.com/jstn_ng/?hl=en" target="_blank">
+                            <Button
+                                variant="ghost"
+                                leftIcon={<IoLogoInstagram />}
+                                colorScheme={useColorModeValue('purple', 'blue')}
+                            >    
+                            Instagram 
+                            </Button>
+                    </Link>
+                </ListItem>
+            </List>
+            </Section>
+
+            <Section delay={0.3}>
+                <Heading
                 as="h3"
-                variant="section-title">
-                    Bio
-                </Heading>
-                <BioSection>
-                    <BioYear>2002</BioYear>
-                </BioSection>
-            </Section> */}
+                variant="section-title"
+            >
+            <p><code><u>Reference</u></code></p>
+            </Heading>
+            <Paragraph>
+                I know a little bit about how ReactJS works, but ultimately, I'm not a frontend developer. 
+                The majority of this site is <i>not</i> my original work. Go check out the source code from Takuya Matsuyama. He also has a cool spinning dog.
+            </Paragraph>
+            </Section>
+
+            <List>
+                <ListItem>
+                    <Link href="https://github.com/craftzdog/craftzdog-homepage" target="_blank">
+                            <Button
+                                variant="ghost"
+                                leftIcon={<FiGithub />}
+                                colorScheme={useColorModeValue('purple', 'blue')}
+                            >    
+                            craftzdog
+                            </Button>
+                    </Link>
+                </ListItem>
+                <ListItem>
+                    <Link href="https://www.craftz.dog/" target="_blank">
+                            <Button
+                                variant="ghost"
+                                leftIcon={<GiSittingDog />}
+                                colorScheme={useColorModeValue('purple', 'blue')}
+                            >    
+                            Takuya Matsuyama
+                            </Button>
+                    </Link>
+                </ListItem>
+            </List>
+
         </Container>
+        {/* <VoxelDog /> */}
      </Layout>
     )
 }

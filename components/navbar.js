@@ -18,6 +18,9 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5'
 import { Code } from '@chakra-ui/react'
+import { FiGithub } from 'react-icons/fi'
+import { FaLinkedinIn } from 'react-icons/fa'
+import { RiInstagramFill } from 'react-icons/ri'
 // import { useColorModeValue } from '@chakra-ui/react'
 
 
@@ -86,7 +89,7 @@ const Navbar = props => {
             style={{ gap: 4 }}
             pl={2}
           >
-            <IoLogoGithub />
+            <FiGithub />
             </LinkItem>
             <LinkItem
             target="_blank"
@@ -97,7 +100,7 @@ const Navbar = props => {
             style={{ gap: 4 }}
             pl={2}
           >
-            <IoLogoLinkedin />
+            <FaLinkedinIn />
             </LinkItem>
             <LinkItem
             target="_blank"
@@ -108,7 +111,7 @@ const Navbar = props => {
             style={{ gap: 4 }}
             pl={2}
           >
-            <IoLogoInstagram />
+            <RiInstagramFill />
             </LinkItem>
             {/* <LinkItem href="/posts" path={path}>
             Posts
