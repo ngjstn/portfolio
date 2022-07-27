@@ -134,18 +134,15 @@ const Page = () => {
                 I'm a third year standing computer engineering (BASc.) student at the University of British Columbia. 
                 My courses have mainly revovled around low level computer architecture, digital logic design, software construction, and data structures & algorithms.
             </Paragraph>
-            <Paragraph>
-            
+            </Section>
+
             <Section></Section>
             
-            <Section>
+            <Section delay={0.3}>
                 <Paragraph>
                     Oh, I'm also part of an engineering design team called Mars Colony. Our current project is to prototype and design a functioning Sabatier Reactor
                     to refuel starships using only resources found on Mars. I'm working on the RTOS firmware for the electrical control system, as well as some basic PCB design.
                 </Paragraph>
-            </Section>
-
-            </Paragraph>
             </Section>
 
             <Section delay={0.3}>
@@ -185,7 +182,7 @@ const Page = () => {
 
             </SimpleGrid>
             </Section>
-            {/* <Section></Section> */}
+            <Section></Section>
 
             <List>
                 <ListItem>
