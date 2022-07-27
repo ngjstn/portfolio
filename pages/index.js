@@ -34,7 +34,7 @@ const Page = () => {
                         <code>justin ng</code>
                     </Heading>
                     <p>Firmware Validation Co-op @ Motorola Solutions</p>
-                    <Code colorScheme={useColorModeValue('purple', 'blue')}>Vancouver, BC</Code>
+                    <Code colorScheme={useColorModeValue('pink', 'blue')}>Vancouver, BC</Code>
                 </Box>
                 <Box>
                     <Box 
@@ -73,7 +73,7 @@ const Page = () => {
             as="h3" 
             variant="section-title"
             >
-            <p><code><u>About Me</u></code></p>
+            <p><code><u>about me</u></code></p>
             </Heading>
             <Paragraph>
                     Hello there! I'm Justin, and I'm interested in all things firmware/embedded related (software/web stuff is kinda cool too). 
@@ -83,6 +83,11 @@ const Page = () => {
             </Paragraph>
             </Section>
 
+            {/* <Section delay={0.1}>
+                <Paragraph>
+                </Paragraph>
+            </Section> */}
+
             <Section delay={0.1}>
                 <List>
                 <ListItem>
@@ -90,7 +95,7 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<FiGithub />}
-                                colorScheme={useColorModeValue('purple', 'blue')}
+                                colorScheme={useColorModeValue('purple', 'pink')}
                             >    
                             Github
                             </Button>
@@ -101,7 +106,7 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<FaLinkedinIn />}
-                                colorScheme={useColorModeValue('purple', 'blue')}
+                                colorScheme={useColorModeValue('purple', 'pink')}
                             >    
                             LinkedIn
                             </Button>
@@ -112,9 +117,9 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<IoLogoInstagram />}
-                                colorScheme={useColorModeValue('purple', 'blue')}
+                                colorScheme={useColorModeValue('purple', 'pink')}
                             >    
-                            @ng_jstn
+                            @jstn_ng
                             </Button>
                     </Link>
                 </ListItem>
@@ -128,7 +133,7 @@ const Page = () => {
                 as="h3"
                 variant="section-title"
             >
-            <p><code><u>Education</u></code></p>
+            <p><code><u>education</u></code></p>
             </Heading>
             <Paragraph>
                 I'm a third year standing computer engineering (BASc.) student at the University of British Columbia. 
@@ -153,7 +158,8 @@ const Page = () => {
             title=""
             thumbnail={thumbElec}
             >
-              <Code>firmware/electrical team</Code>
+              {/* <Code colorScheme={useColorModeValue('pink', 'yellow')}>firmware/electrical team</Code> */}
+              <code>firmware/electrical team</code>
             </WorkGridItem>
        
             <WorkGridItem
@@ -161,7 +167,8 @@ const Page = () => {
             title=""
             thumbnail={thumbHeat}
             >
-              <Code>heat tape element</Code>
+              {/* <Code colorScheme={useColorModeValue('pink', 'yellow')}>heat tape element</Code> */}
+              <code>heat tape element</code>
             </WorkGridItem>
 
             <WorkGridItem
@@ -169,7 +176,7 @@ const Page = () => {
             title=""
             thumbnail={thumbElec2}
             >
-              <Code>more work sessions</Code>
+              <code>more work sessions</code>
             </WorkGridItem>
 
             <WorkGridItem
@@ -177,7 +184,7 @@ const Page = () => {
             title=""
             thumbnail={thumbWater}
             >
-              <Code>wow we made some water</Code>
+              <code>wow we made some water</code>
             </WorkGridItem>
 
             </SimpleGrid>
@@ -190,7 +197,7 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<TbAlien />}
-                                colorScheme={useColorModeValue('purple', 'blue')}
+                                colorScheme={useColorModeValue('purple', 'pink')}
                             >    
                             Team Website
                             </Button>
@@ -201,7 +208,7 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<IoLogoInstagram />}
-                                colorScheme={useColorModeValue('purple', 'blue')}
+                                colorScheme={useColorModeValue('purple', 'pink')}
                             >    
                             @ubcmarscolony
                             </Button>
@@ -210,6 +217,15 @@ const Page = () => {
             </List>
 
             <Section></Section>
+            
+            {/* <Section delay={0.5}>
+                <Heading
+                as="h3"
+                variant="section-title"
+                >
+                <p><code>Interests</code></p>
+                </Heading>
+            </Section> */}
 
             <Divider />
 
@@ -218,7 +234,7 @@ const Page = () => {
                 as="h3"
                 variant="section-title"
             >
-            <p><code><u>Reference</u></code></p>
+            <p><code><u>reference</u></code></p>
             </Heading>
             <Paragraph>
                 I'm no pro at ReactJS, and I'm also not a web developer. 
@@ -237,7 +253,7 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<FiGithub />}
-                                colorScheme={useColorModeValue('purple', 'blue')}
+                                colorScheme={useColorModeValue('purple', 'pink')}
                             >    
                             craftzdog
                             </Button>
@@ -248,7 +264,7 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<GiSittingDog />}
-                                colorScheme={useColorModeValue('purple', 'blue')}
+                                colorScheme={useColorModeValue('purple', 'pink')}
                             >    
                             Takuya Matsuyama
                             </Button>
@@ -259,7 +275,7 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<AiOutlineYoutube />}
-                                colorScheme={useColorModeValue('purple', 'blue')}
+                                colorScheme={useColorModeValue('purple', 'pink')}
                             >    
                             devaslife
                             </Button>
@@ -267,9 +283,9 @@ const Page = () => {
                 </ListItem>
             </List>
     
+        
         </Container>
         
-        {/* <VoxelDog /> */}
      </Layout>
     )
 }
