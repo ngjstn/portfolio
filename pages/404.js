@@ -16,11 +16,11 @@ const NotFound = () => {
     <Container>
       <Heading as="h1"><code>oops </code><Code colorScheme='red'>> 404 not found</Code></Heading>
       
-      {/* <Divider my={6} /> */}
+      <Divider my={6} />
       <Box my={6} align="left">
       <code>stop looking im shy :flushed:</code>
       </Box>
-      <Box my={6} align="center">
+      {/* <Box my={6} align="center">
         <Divider my={6} />
         <NextLink href="/" passHref>
           <Button 
@@ -30,7 +30,7 @@ const NotFound = () => {
             take me home
           </Button>
         </NextLink>
-      </Box>
+      </Box> */}
     </Container>
   )
 }

@@ -1,4 +1,4 @@
-import { Container, Heading, Box, Image, useColorModeValue, Button, Code, Link, ListItem, List } from '@chakra-ui/react'
+import { Container, Heading, Box, Image, useColorModeValue, Button, Code, Link, ListItem, List, Divider, SimpleGrid, GridItem } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
@@ -7,6 +7,8 @@ import { GiSittingDog } from 'react-icons/gi'
 import { FiGithub } from 'react-icons/fi'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { RiInstagramFill } from 'react-icons/ri'
+import thumbMarsColony from '../public/images/projects/mars_colony.png'
+
 // import VoxelDog from '../components/voxel-dog'
 
 const Page = () => {
@@ -50,6 +52,8 @@ const Page = () => {
                     </Box>
                 </Box>
             </Box>
+            <Section></Section>
+            <Divider />
 
             <Section delay={0.1}> 
             <Heading 
@@ -59,8 +63,8 @@ const Page = () => {
             <p><code><u>About Me</u></code></p>
             </Heading>
             <Paragraph>
-                    Hello there! I'm a 3rd year Computer Engineering Student at UBC, interested in all things firmware, software, or web related. 
-                    I'm currently working an 8 month co-op term with Motorola Solutions, Avigilon, handling the automation and development of our test
+                    Hello there! I'm Justin, and I'm interested in all things firmware/embedded related (software/web stuff is kinda cool too). 
+                    I'm currently working an 8 month co-op term (May - Dec 2022) with Motorola Solutions, Avigilon, handling the automation and development of our test
                     frameworks to validate the firmware in our security IP camera products and manufacturing processes. After this current work term, 
                     I'll be looking for another co-op opportunity to try out something new in January.{' '}
             </Paragraph>
@@ -104,7 +108,47 @@ const Page = () => {
             </List>
             </Section>
 
+            <Divider />
+
             <Section delay={0.3}>
+            <Heading
+                as="h3"
+                variant="section-title"
+            >
+            <p><code><u>Education</u></code></p>
+            </Heading>
+            <Paragraph>
+                I'm a third year standing computer engineering (BASc.) student at the University of British Columbia. 
+                My courses have mainly revovled around low level computer architecture, digital logic design, software construction, and data structures & algorithms.
+            </Paragraph>
+            <Paragraph>
+                
+            </Paragraph>
+            </Section>
+
+            <Section delay={0.3}>
+            <SimpleGrid columns={[1, 2, 2]} gap={6}>
+                <GridItem
+                    href="https://www.youtube.com/devaslife"
+                    title="Dev as Life"
+                    thumbnail={thumbMarsColony}
+                >
+                    Firmware/Electrical Sub-team
+                </GridItem>
+                {/* <GridItem
+                    href="https://www.inkdrop.app/"
+                    title="Inkdrop"
+                    thumbnail={thumbInkdrop}
+                >
+                    A Markdown note-taking app
+                </GridItem> */}
+        </SimpleGrid>
+
+            </Section>
+
+            <Divider />
+
+            <Section delay={0.5}>
                 <Heading
                 as="h3"
                 variant="section-title"
@@ -141,8 +185,9 @@ const Page = () => {
                     </Link>
                 </ListItem>
             </List>
-
+    
         </Container>
+        
         {/* <VoxelDog /> */}
      </Layout>
     )
