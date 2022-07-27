@@ -7,21 +7,26 @@ import { GiSittingDog } from 'react-icons/gi'
 import { FiGithub } from 'react-icons/fi'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { RiInstagramFill } from 'react-icons/ri'
-import thumbMarsColony from '../public/images/projects/mars_colony.png'
-
+import thumbElec from '../public/images/projects/elec_team.png'
+import { AiOutlineYoutube } from 'react-icons/ai'
+import { MdLocationOn, MdOutlineLocationOn } from 'react-icons/md'
+import { WorkGridItem } from '../components/grid-item'
+// import thumbSabatier from '../public/images/projects/sabatier.png'
+import thumbWater from '../public/images/projects/water.png'
+import thumbHeat from '../public/images/projects/heat.png' 
+import thumbElec2 from '../public/images/projects/elec_team2.jpg'
+import { GiPlanetConquest } from 'react-icons/gi'
+import { TbAlien } from 'react-icons/tb'
+// import { IoLocationOutline } from 'react-icons/io'
+// import Fonts from '../components/fonts'
 // import VoxelDog from '../components/voxel-dog'
+
 
 const Page = () => {
     return (
         <Layout>
         <Container>
-            <Box 
-            borderRadius="lg" 
-            bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} 
-            p={3} align="center" 
-            mb={6}>
-                <code>{useColorModeValue('ouch turn the lights off >:(', 'idk what im doing lol')}</code>
-            </Box>
+            {/* <Fonts /> */}
 
             <Box display={{md:'flex'}}>
                 <Box flexGrow={1}>
@@ -30,7 +35,6 @@ const Page = () => {
                     </Heading>
                     <p>Firmware Validation Co-op @ Motorola Solutions</p>
                     <Code colorScheme={useColorModeValue('purple', 'blue')}>Vancouver, BC</Code>
-                    
                 </Box>
                 <Box>
                     <Box 
@@ -52,8 +56,17 @@ const Page = () => {
                     </Box>
                 </Box>
             </Box>
+
             <Section></Section>
-            <Divider />
+
+            <Box 
+            borderRadius="lg" 
+            bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} 
+            p={3} align="center" 
+            mb={6}>
+                <code>{useColorModeValue('ouch turn the lights off >:(', 'idk what im doing lol')}</code>
+            </Box>
+            <Section></Section>
 
             <Section delay={0.1}> 
             <Heading 
@@ -101,7 +114,7 @@ const Page = () => {
                                 leftIcon={<IoLogoInstagram />}
                                 colorScheme={useColorModeValue('purple', 'blue')}
                             >    
-                            Instagram 
+                            @ng_jstn
                             </Button>
                     </Link>
                 </ListItem>
@@ -122,29 +135,84 @@ const Page = () => {
                 My courses have mainly revovled around low level computer architecture, digital logic design, software construction, and data structures & algorithms.
             </Paragraph>
             <Paragraph>
-                
+            
+            <Section></Section>
+            
+            <Section>
+                <Paragraph>
+                    Oh, I'm also part of an engineering design team called Mars Colony. Our current project is to prototype and design a functioning Sabatier Reactor
+                    to refuel starships using only resources found on Mars. I'm working on the RTOS firmware for the electrical control system, as well as some basic PCB design.
+                </Paragraph>
+            </Section>
+
             </Paragraph>
             </Section>
 
             <Section delay={0.3}>
-            <SimpleGrid columns={[1, 2, 2]} gap={6}>
-                <GridItem
-                    href="https://www.youtube.com/devaslife"
-                    title="Dev as Life"
-                    thumbnail={thumbMarsColony}
-                >
-                    Firmware/Electrical Sub-team
-                </GridItem>
-                {/* <GridItem
-                    href="https://www.inkdrop.app/"
-                    title="Inkdrop"
-                    thumbnail={thumbInkdrop}
-                >
-                    A Markdown note-taking app
-                </GridItem> */}
-        </SimpleGrid>
+            <SimpleGrid columns={2} gap={6}>
+            
+            <WorkGridItem
+            id="team1"
+            title=""
+            thumbnail={thumbElec}
+            >
+              <Code>firmware/electrical team</Code>
+            </WorkGridItem>
+       
+            <WorkGridItem
+            id="heat-element"
+            title=""
+            thumbnail={thumbHeat}
+            >
+              <Code>heat tape element</Code>
+            </WorkGridItem>
 
+            <WorkGridItem
+            id="team2"
+            title=""
+            thumbnail={thumbElec2}
+            >
+              <Code>more work sessions</Code>
+            </WorkGridItem>
+
+            <WorkGridItem
+            id="water-evidence"
+            title=""
+            thumbnail={thumbWater}
+            >
+              <Code>wow we made some water</Code>
+            </WorkGridItem>
+
+            </SimpleGrid>
             </Section>
+            {/* <Section></Section> */}
+
+            <List>
+                <ListItem>
+                    <Link href="https://www.ubcmarscolony.com/" target="_blank">
+                            <Button
+                                variant="ghost"
+                                leftIcon={<TbAlien />}
+                                colorScheme={useColorModeValue('purple', 'blue')}
+                            >    
+                            Team Website
+                            </Button>
+                    </Link>
+                </ListItem>
+                <ListItem>
+                    <Link href="https://www.instagram.com/ubcmarscolony/?hl=en" target="_blank">
+                            <Button
+                                variant="ghost"
+                                leftIcon={<IoLogoInstagram />}
+                                colorScheme={useColorModeValue('purple', 'blue')}
+                            >    
+                            @ubcmarscolony
+                            </Button>
+                    </Link>
+                </ListItem>
+            </List>
+
+            <Section></Section>
 
             <Divider />
 
@@ -156,9 +224,14 @@ const Page = () => {
             <p><code><u>Reference</u></code></p>
             </Heading>
             <Paragraph>
-                I know a little bit about how ReactJS works, but ultimately, I'm not a frontend developer. 
-                The majority of this site is <i>not</i> my original work. Go check out the source code from Takuya Matsuyama. He also has a cool spinning dog.
+                I'm no pro at ReactJS, and I'm also not a web developer. 
+                The majority of the site's frontend is <i>NOT</i> my original work. Go check out some work from Takuya Matsuyama. 
+                He also has a cool spinning dog and makes great videos.
             </Paragraph>
+            </Section>
+
+            <Section delay={0.5}>
+                <Code>> the backend is all me tho ;)</Code>
             </Section>
 
             <List>
@@ -181,6 +254,17 @@ const Page = () => {
                                 colorScheme={useColorModeValue('purple', 'blue')}
                             >    
                             Takuya Matsuyama
+                            </Button>
+                    </Link>
+                </ListItem>
+                <ListItem>
+                    <Link href="https://www.youtube.com/c/devaslife" target="_blank">
+                            <Button
+                                variant="ghost"
+                                leftIcon={<AiOutlineYoutube />}
+                                colorScheme={useColorModeValue('purple', 'blue')}
+                            >    
+                            devaslife
                             </Button>
                     </Link>
                 </ListItem>

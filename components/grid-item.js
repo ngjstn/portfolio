@@ -30,7 +30,6 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
           alt={title}
           className="grid-item-thumbnail"
           placeholder="blur"
-          blurDataURL='https://www.ubcmarscolony.com/'
         />
         <LinkOverlay href={`/projects/${id}`}>
           <Text mt={2} fontSize={20}>
@@ -52,4 +51,3 @@ export const GridItemStyle = () => (
     `}
   />
 )
-
