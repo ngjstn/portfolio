@@ -17,9 +17,17 @@ import thumbHeat from '../public/images/projects/heat.png'
 import thumbElec2 from '../public/images/projects/elec_team2.jpg'
 import { GiPlanetConquest } from 'react-icons/gi'
 import { TbAlien } from 'react-icons/tb'
+import VoxelDog from '../components/voxel-dog'
+import dynamic from 'next/dynamic'
+import VoxelDogLoader from '../components/voxel-dog-loader'
 // import { IoLocationOutline } from 'react-icons/io'
 // import Fonts from '../components/fonts'
 // import VoxelDog from '../components/voxel-dog'
+
+// const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
+//     ssr: false,
+//     loading: () => <VoxelDogLoader />
+//   })
 
 
 const Page = () => {
@@ -27,13 +35,15 @@ const Page = () => {
         <Layout>
         <Container>
             {/* <Fonts /> */}
-
+            <Section></Section>
+            {/* <LazyVoxelDog /> */}
             <Box display={{md:'flex'}}>
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">
                         <code>justin ng</code>
                     </Heading>
                     <p>Firmware Validation Co-op @ Motorola Solutions</p>
+                    {/* <MdOutlineLocationOn /> */}
                     <Code colorScheme={useColorModeValue('pink', 'blue')}>Vancouver, BC</Code>
                 </Box>
                 <Box>
@@ -62,7 +72,7 @@ const Page = () => {
             <Box 
             borderRadius="lg" 
             bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} 
-            p={3} align="center" 
+            p={0.5} align="center" 
             mb={6}>
                 <code>{useColorModeValue('ouch turn the lights off >:(', 'idk what im doing lol')}</code>
             </Box>
@@ -75,18 +85,16 @@ const Page = () => {
             >
             <p><code><u>about me</u></code></p>
             </Heading>
+            {/* <VoxelDog /> */}
             <Paragraph>
-                    Hello there! I'm Justin, and I'm interested in all things firmware/embedded related (software/web stuff is kinda cool too). 
-                    I'm currently working an 8 month co-op term (May - Dec 2022) with Motorola Solutions, Avigilon, handling the automation and development of our test
-                    frameworks to validate the firmware in our security IP camera products and manufacturing processes. After this current work term, 
-                    I'll be looking for another co-op opportunity to try out something new in January.{' '}
+                    Hello there! I'm Justin, and I'm interested in all things firmware and embedded related (software/web stuff is kinda cool too). 
+                    I'm currently working an 8 month co-op term with Motorola Solutions, Avigilon, handling the automation and development of our test
+                    frameworks and procedures. I validate the SoC firmware, web user interfaces, manufacturing processes, and our VMS client/server applications for our security IP camera products. 
+                    After this current work term, I'll be looking for another co-op opportunity to try out something new in January 2023.
             </Paragraph>
             </Section>
 
-            {/* <Section delay={0.1}>
-                <Paragraph>
-                </Paragraph>
-            </Section> */}
+         
 
             <Section delay={0.1}>
                 <List>
@@ -137,7 +145,7 @@ const Page = () => {
             </Heading>
             <Paragraph>
                 I'm a third year standing computer engineering (BASc.) student at the University of British Columbia. 
-                My courses have mainly revovled around low level computer architecture, digital logic design, software construction, and data structures & algorithms.
+                My courses have mainly revolved around low level computer architecture, digital logic system design, software construction, and data structures & algorithms.
             </Paragraph>
             </Section>
 
@@ -146,7 +154,7 @@ const Page = () => {
             <Section delay={0.3}>
                 <Paragraph>
                     Oh, I'm also part of an engineering design team called Mars Colony. Our current project is to prototype and design a functioning Sabatier Reactor
-                    to refuel starships using only resources found on Mars. I'm working on the RTOS firmware for the electrical control system, as well as some basic PCB design.
+                    to refuel starships using only resources found on Mars. I'm working on the RTOS firmware for the electrical control system for the reactor, as well as some basic PCB design.
                 </Paragraph>
             </Section>
 
@@ -176,7 +184,7 @@ const Page = () => {
             title=""
             thumbnail={thumbElec2}
             >
-              <code>more work sessions</code>
+              <code>more reactor testing</code>
             </WorkGridItem>
 
             <WorkGridItem
@@ -234,17 +242,17 @@ const Page = () => {
                 as="h3"
                 variant="section-title"
             >
-            <p><code><u>reference</u></code></p>
+            <p><code><u>site reference</u></code></p>
             </Heading>
             <Paragraph>
-                I'm no pro at ReactJS, and I'm also not a web developer. 
-                The majority of the site's frontend is <i>NOT</i> my original work. Go check out some work from Takuya Matsuyama. 
+                I'm not a pro at ReactJS, and I'm also not a web developer. 
+                The majority of this site's frontend is <i>NOT</i> my original work. Go check out the work from Takuya Matsuyama. 
                 He also has a cool spinning dog and makes great videos.
             </Paragraph>
             </Section>
 
             <Section delay={0.5}>
-                <Code>> the backend is all me tho ;)</Code>
+                <Code>&gt; the backend is all me tho ;)</Code>
             </Section>
 
             <List>
