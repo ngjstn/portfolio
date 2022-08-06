@@ -4,7 +4,7 @@
     "eslint-config-next": "^12.2.3",
     "prettier": "^2.7.1"
   },
-  "name": "portfolio-chakra",
+  "name": "client",
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
@@ -208,5 +208,6 @@
   "bugs": {
     "url": "https://github.com/ngjstn/portfolio-chakra/issues"
   },
-  "homepage": "https://github.com/ngjstn/portfolio-chakra#readme"
+  "homepage": "https://github.com/ngjstn/portfolio-chakra#readme",
+  "proxy": "http://localhost:5000"
 }
