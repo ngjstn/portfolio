@@ -6,17 +6,17 @@ import { useEffect, useState } from 'react'
 
 const Website = ({ Component, pageProps, router }) => {
 
-    // const [backendData, setBackendData] = useState([{}])
+    const [backendData, setBackendData] = useState([{}])
 
-    // useEffect(() => {
-    //     fetch("http://localhost:5000/api").then(
-    //         response => response.json()
-    //     ).then(
-    //         data => {
-    //             setBackendData(data)
-    //         }
-    //     )
-    // }, [])
+    useEffect(() => {
+        fetch("http://localhost:5000/api").then(
+            response => response.json()
+        ).then(
+            data => {
+                setBackendData(data)
+            }
+        )
+    }, [])
 
 
     return (

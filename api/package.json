@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./index.js",
-    "dev": "nodemon ./index.js",
-    "build": "cd client && npm install && npm run build"
+    "dev": "nodemon ./index.js"
   },
   "author": "Justin Ng",
   "license": "ISC",
@@ -17,8 +16,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
-  },
-  "engines": {
-    "node": "^16.16.0"
   }
 }
