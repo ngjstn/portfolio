@@ -8,7 +8,7 @@
                 "varsIgnorePattern": "^_"
             }
         ],
-        "react/no-unused-vars": "off",
+        "no-unused-vars": "off",
         "react/no-unescaped-entities": "off" 
     }
 } 
