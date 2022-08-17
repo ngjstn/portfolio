@@ -167,6 +167,7 @@
     "rimraf": "^3.0.2",
     "run-parallel": "^1.2.0",
     "semver": "^6.3.0",
+    "sharp": "^0.30.7",
     "shebang-command": "^2.0.0",
     "shebang-regex": "^3.0.0",
     "side-channel": "^1.0.4",
