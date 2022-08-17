@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Navbar from '../navbar.js'
 import { Box, Container } from '@chakra-ui/react'
 import Fonts from '../fonts.js'
-import VoxelDog from '../voxel-dog.js'
+// import VoxelDog from '../voxel-dog.js'
 import { useColorModeValue } from '@chakra-ui/react'
 
 const Main = ({ children, router}) => {
