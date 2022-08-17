@@ -12,10 +12,14 @@ const port = process.env.PORT || 3000;
 if (!dev && cluster.isMaster) {
   console.log(`Node cluster master ${process.pid} is running`);
 
-  // Fork workers.
-  for (let i = 0; i < numCPUs; i++) {
+  // // Fork workers.
+  // for (let i = 0; i < numCPUs; i++) {
+  //   cluster.fork();
+  // }
+  const WORKERS = process.env.WEB_CONCURRENCY || 1;
+    for (let i = 0; i < WORKERS; i++) {
     cluster.fork();
-  }
+}
 
   cluster.on('exit', (worker, code, signal) => {
     console.error(`Node cluster worker ${worker.process.pid} exited: code ${code}, signal ${signal}`);
