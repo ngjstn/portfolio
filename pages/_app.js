@@ -4,19 +4,21 @@ import theme from '../lib/theme'
 import { AnimatePresence } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
+const port = process.env.PORT || 3000; 
+
 const Website = ({ Component, pageProps, router }) => {
 
-    // const [backendData, setBackendData] = useState([{}])
+    const [backendData, setBackendData] = useState([{}])
 
-    // useEffect(() => {
-    //     fetch("http://localhost:5000/api").then(
-    //         response => response.json()
-    //     ).then(
-    //         data => {
-    //             setBackendData(data)
-    //         }
-    //     )
-    // }, [])
+    useEffect(() => {
+        fetch(`http://localhost:${port}/api`).then(
+            response => response.json()
+        ).then(
+            data => {
+                setBackendData(data)
+            }
+        )
+    }, [])
 
 
     return (

@@ -3,7 +3,7 @@ const next = require('next');
 const path = require('path');
 const url = require('url');
 const cluster = require('cluster');
-const numCPUs = require('os').cpus().length;
+// const numCPUs = require('os').cpus().length;
 
 const dev = process.env.NODE_ENV !== 'production';
 const port = process.env.PORT || 3000;
@@ -54,14 +54,11 @@ if (!dev && cluster.isMaster) {
       }));
     
     //   // Example server-side routing
-    //   server.get('/a', (req, res) => {
-    //     return nextApp.render(req, res, '/b', req.query)
-    //   })
+      server.get('/api', (req, res) => {
+        res.json({"test": ["1", "2", "3"]})
+        // return nextApp.render(req, res, '/api', req.query)
+      })
 
-    //   // Example server-side routing
-    //   server.get('/b', (req, res) => {
-    //     return nextApp.render(req, res, '/a', req.query)
-    //   })
 
       // Default catch-all renders Next app
       server.get('*', (req, res) => {
