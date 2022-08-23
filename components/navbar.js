@@ -16,12 +16,9 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5'
-import { Code } from '@chakra-ui/react'
 import { FiGithub } from 'react-icons/fi'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { RiInstagramFill } from 'react-icons/ri'
-// import { useColorModeValue } from '@chakra-ui/react'
 
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
@@ -32,7 +29,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       <Link
         p={2}
         bg={active ? 'grassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
+        color={active ? 'gray200' : inactiveColor}
         target={target}
         {...props}
       >
@@ -50,7 +47,7 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
+      bg={useColorModeValue('#ffffff40', '#20202340')}
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={2}
       {...props}
@@ -78,7 +75,10 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/projects" path={path}>
-            <code>lame projects</code>
+            <code>projects</code>
+          </LinkItem>
+          <LinkItem href="/gallery" path={path}>
+            <code>gallery</code>
           </LinkItem>
           <LinkItem
             target="_blank"
@@ -113,9 +113,7 @@ const Navbar = props => {
           >
             <RiInstagramFill />
             </LinkItem>
-            {/* <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem> */}
+ 
         </Stack>
 
         <Box flex={1} align="right">
@@ -130,15 +128,12 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                {/* <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink> */}
                 <NextLink href="/projects" passHref>
                   <MenuItem as={Link}>projects</MenuItem>
                 </NextLink>
-                {/* <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink> */}
+                <NextLink href="/gallery" passHref>
+                  <MenuItem as={Link}>gallery</MenuItem>
+                </NextLink>
                 <MenuItem as={Link} href="https://www.instagram.com/jstn_ng/?hl=en"></MenuItem>
                 <MenuItem as={Link} href="https://github.com/ngjstn"></MenuItem>
                 <MenuItem as={Link} href="https://www.linkedin.com/in/ngjstn/"></MenuItem>

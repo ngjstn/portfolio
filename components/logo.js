@@ -18,7 +18,7 @@ padding: 10px;
 `
 
 const Logo = () => {
-    const footPrintImg = `/images/${useColorModeValue('blob', 'sad_blob')}.png` 
+    const footPrintImg = `/images/${useColorModeValue('sad_blob', 'sad_blob')}.png` 
 
     return (
         <Link href="/">

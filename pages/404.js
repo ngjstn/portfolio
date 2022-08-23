@@ -14,7 +14,7 @@ import { Code } from '@chakra-ui/react'
 const NotFound = () => {
   return (
     <Container>
-      <Heading as="h1"><code>oops </code><Code colorScheme='red'>> 404 not found</Code></Heading>
+      <Heading as="h1"><code>oops </code><Code colorScheme='red'>&gt; 404 not found</Code></Heading>
       
       <Divider my={6} />
       <Box my={6} align="left">

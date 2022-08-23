@@ -7,11 +7,11 @@ import { GiSittingDog } from 'react-icons/gi'
 import { FiGithub } from 'react-icons/fi'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { RiInstagramFill } from 'react-icons/ri'
-import thumbElec from '../public/images/projects/elec_team.png'
 import { AiOutlineYoutube } from 'react-icons/ai'
 import { MdLocationOn, MdOutlineLocationOn } from 'react-icons/md'
 import { WorkGridItem } from '../components/grid-item'
 // import thumbSabatier from '../public/images/projects/sabatier.png'
+import thumbElec from '../public/images/projects/elec_team.png'
 import thumbWater from '../public/images/projects/water.png'
 import thumbHeat from '../public/images/projects/heat.png' 
 import thumbElec2 from '../public/images/projects/elec_team2.jpg'
@@ -162,25 +162,23 @@ const Page = () => {
             <SimpleGrid columns={2} gap={6}>
             
             <WorkGridItem
-            id="team1"
+            id=""
             title=""
             thumbnail={thumbElec}
             >
-              {/* <Code colorScheme={useColorModeValue('pink', 'yellow')}>firmware/electrical team</Code> */}
               <code>firmware/electrical team</code>
             </WorkGridItem>
        
             <WorkGridItem
-            id="heat-element"
+            id=""
             title=""
             thumbnail={thumbHeat}
             >
-              {/* <Code colorScheme={useColorModeValue('pink', 'yellow')}>heat tape element</Code> */}
               <code>heat tape element</code>
             </WorkGridItem>
 
             <WorkGridItem
-            id="team2"
+            id=""
             title=""
             thumbnail={thumbElec2}
             >
@@ -188,7 +186,7 @@ const Page = () => {
             </WorkGridItem>
 
             <WorkGridItem
-            id="water-evidence"
+            id=""
             title=""
             thumbnail={thumbWater}
             >
@@ -245,7 +243,7 @@ const Page = () => {
             <p><code><u>site reference</u></code></p>
             </Heading>
             <Paragraph>
-                I'm not a pro at ReactJS, and I'm also not a web developer. 
+                I'm not a pro at React, and I'm also not a web developer. 
                 The majority of this site's frontend is <i>NOT</i> my original work. Go check out the work from Takuya Matsuyama. 
                 He also has a cool spinning dog and makes great videos.
             </Paragraph>
