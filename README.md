@@ -1,6 +1,6 @@
 # ngjstn.com 
 
-This is just a basic website that I made for future projects down the road. It's very much a work in progress, but you can still check it out at [ngjstn.com](ngjstn.com) 
+This is just a basic website that I made for future projects down the road. It's very much a work in progress, but you can still check it out at [ngjstn.com](http://ngjstn.com) 
 
 The website is made with React frontend and Node express backend, hosted with Heroku cloud service. The frontend was heavily referenced using Takuya Matsuyama's work, which you can find [here](https://github.com/craftzdog/craftzdog-homepage). 
 
@@ -51,4 +51,4 @@ git push heroku main
 ```
 
 
-Once it's finished successfully deploying, it should at least be accessible at [https://ngjstn-website.herokuapp.com/](https://ngjstn-website.herokuapp.com/), and if configured, the custom domain that was defined [ngjstn.com](ngjstn.com)
+Once it's finished successfully deploying, it should at least be accessible at [https://ngjstn-website.herokuapp.com/](https://ngjstn-website.herokuapp.com/), and if configured, the custom domain that was defined [ngjstn.com](http://ngjstn.com)
