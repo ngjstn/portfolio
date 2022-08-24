@@ -62,10 +62,12 @@ Once it's finished successfully deploying, it should at least be accessible at [
 
 > *Since Vercel automatically generates SSL certificates for you, this isn't needed. What's funny is that Heroku will tell you that if you don't have the paid subscription, you can only upload manually generated certificates, but what they don't tell you is that you still need to pay to upload them (?!?). Just use Vercel smh*
 
+The following steps are detailed [here](https://www.geeksforgeeks.org/using-certbot-manually-for-ssl-certificates/)
+
 Make sure to have Cerbot installed on your machine 
 
 * Windows download [here](https://dl.eff.org/certbot-beta-installer-win32.exe)
-* Ubuntu/Debian use `sudo apt-get install certbot` 
+* For Ubuntu/Debian, use `sudo apt-get install certbot` 
 
 Next we need to authenticate that the domain is actually own by us using a DNS challenge. Run the following command and follow the instructions given in terminal: 
 
@@ -75,5 +77,6 @@ cerbot certonly --manual -d example.com --agree-tos-manual-public-ip-logging-ok-
 
 You essentially need to create a `DNS TXT` record under a name that looks something like `_acme-challenge.exampledomain.com`, with the value of the random string that was generated. 
 
-After validating the DNS record with your provider, certbot should have generated a few files, noteably the certifate and private key, which need to be uploaded to your web host provider.
+After validating the DNS record with your provider, certbot should have generated a few files, noteably the certificate and private key, which need to be uploaded to your web host provider.
+
 
