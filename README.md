@@ -33,7 +33,7 @@ While the process is running, any changes that are made should be updated in rea
 
 ### ~~Deploy on Heroku~~ just use Vercel lol 
 
-> *The reason why I switched to Vercel web host is because they have automatic SSL certificate generation (for free >:)) and provide static IPv4 addresses for DNS A record, so we can establish a root domain. Since I'm using Google as my DNS provider, Heroku isn't able to setup custom root domains because they only provide DNS targets pointing to their own domains (which I think are dynamically assigned). They also require you to pay a monthly subscription fee to use SSL certificates with custom domains >:(* 
+> *The reason why I switched to Vercel web host is because they have automatic SSL certificate generation (for free >:)) and provide static IPv4 addresses for DNS A record, so we can establish a root domain instead of having to forward to a subdomain. Since I'm using Google as my DNS provider, Heroku isn't able to setup custom root domains because they only provide DNS targets pointing to their own domains (which I think are dynamically assigned). They also require you to pay a monthly subscription fee to use SSL certificates with custom domains >:(* 
 
 You can just navigate to the project dashboard's `Deploy` tab on Heroku and point it to the Github repository's main branch and press the `Deploy Branch` button. 
 
