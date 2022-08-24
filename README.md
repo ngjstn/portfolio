@@ -31,7 +31,7 @@ While the process is running, any changes that are made should be updated in rea
 
 --- 
 
-### ~~Deploy on Heroku~~ just use Vercel lol 
+### ~~Deploy on Heroku~~ nvm just use Vercel lol 
 
 > *The reason why I switched to Vercel web host is because they have automatic SSL certificate generation (for free >:)) and provide static IPv4 addresses for DNS A record, so we can establish a root domain instead of having to forward to a subdomain. Since I'm using Google as my DNS provider, Heroku isn't able to setup custom root domains because they only provide DNS targets pointing to their own domains (which I think are dynamically assigned). They also require you to pay a monthly subscription fee to use SSL certificates with custom domains >:(* 
 
@@ -54,4 +54,26 @@ git push heroku main
 
 
 Once it's finished successfully deploying, it should at least be accessible at [https://ngjstn-website.herokuapp.com/](https://ngjstn-website.herokuapp.com/), and if configured, the custom domain that was defined [ngjstn.com](http://ngjstn.com)
+
+
+--- 
+
+### Manual SSL Certificate Generation with Cerbot
+
+> *Since Vercel automatically generates SSL certificates for you, this isn't needed. What's funny is that Heroku will tell you that if you don't have the paid subscription, you can only upload manually generated certificates, but what they don't tell you is that you still need to pay to upload them (?!?). Just use Vercel smh*
+
+Make sure to have Cerbot installed on your machine 
+
+* Windows download [here](https://dl.eff.org/certbot-beta-installer-win32.exe)
+* Ubuntu/Debian use `sudo apt-get install certbot` 
+
+Next we need to authenticate that the domain is actually own by us using a DNS challenge. Run the following command and follow the instructions given in terminal: 
+
+```
+cerbot certonly --manual -d example.com --agree-tos-manual-public-ip-logging-ok-preferred-challenges dns-01 --server https://acme-v02.api.letsencrypt.org/directory --register-unsafely-without-email --rsa-key-size 4096
+```
+
+You essentially need to create a `DNS TXT` record under a name that looks something like `_acme-challenge.exampledomain.com`, with the value of the random string that was generated. 
+
+After validating the DNS record with your provider, certbot should have generated a few files, noteably the certifate and private key, which need to be uploaded to your web host provider.
 
