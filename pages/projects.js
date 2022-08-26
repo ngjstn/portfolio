@@ -1,38 +1,36 @@
-import { Container, Heading, SimpleGrid, Divider, Code } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import {
+  Box,
+  Heading,
+  Text,
+  Container,
+  Divider,
+  Button,
+  useColorModeValue,
+  useColorMode,
+  SimpleGrid
+} from '@chakra-ui/react'
+import { Code } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-// import thumbMarsColony from '../public/images/projects/mars_colony.png'
-import thumbWallpaper from '../public/images/projects/wallpaper.jpg'
-import { useColorModeValue } from '@chakra-ui/react'
+
 
 const Works = () => {
   return (
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
-        <code>projects</code>
-      </Heading>
+    <Heading as="h3" fontSize={20} mb={4}>
+      <code>projects</code>
+    </Heading>
 
-      <SimpleGrid column={[1,1,2]} gap={6}>
-        {/* <Section>
-            <WorkGridItem
-            id="mars_colony"
-            title="Mars Colony Sabatier Reactor"
-            thumbnail={thumbMarsColony}
-            >
-              <Code colorScheme={useColorModeValue('purple', 'blue')}>UBC Engineering Design Team</Code>
-            </WorkGridItem>
-        </Section> */}
-
-        <Section>
-          <WorkGridItem
-          id="wallpaper"
-          title="Placeholder Image (not mine)"
-          thumbnail={thumbWallpaper}
-          >
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-    </Container>
+    <Section>
+    <Heading as="h1"><code>oops </code><Code colorScheme='red'>&gt; page in maintenance</Code></Heading>
+      
+      <Divider my={6} />
+      <Box my={6} align="left">
+      <code>nothing to see here ;)</code>
+      </Box>
+    </Section>
+  </Container>
   )
 }
 

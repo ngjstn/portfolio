@@ -18,7 +18,7 @@ const NotFound = () => {
       
       <Divider my={6} />
       <Box my={6} align="left">
-      <code>stop looking im shy :flushed:</code>
+      <code>stop looking im shy</code>
       </Box>
       {/* <Box my={6} align="center">
         <Divider my={6} />
