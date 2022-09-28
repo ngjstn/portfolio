@@ -199,8 +199,8 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-    "dev": "node server.js -p $PORT",
-    "start": "NODE_ENV=production node server.js -p $PORT",
+    "dev": "next dev -H 0.0.0.0",
+    "start": "next start",
     "build": "next build",
     "prettier": "prettier -write .",
     "lint": "next lint"

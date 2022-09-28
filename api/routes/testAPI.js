@@ -4,7 +4,7 @@ const router = express.Router();
 
 // get requests
 router.get('/', (req, res) => {
-    res.json({"users" : ["1", "2", "3"]})
+    res.json({"test" : ["1", "2", "3"]})
 })
 
 

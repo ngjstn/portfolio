@@ -5,7 +5,7 @@ import Layout from '../components/layouts/article'
 import { IoLogoGithub, IoLogoInstagram } from 'react-icons/io5'
 import { GiSittingDog } from 'react-icons/gi'
 import { FiGithub } from 'react-icons/fi'
-import { FaLinkedinIn } from 'react-icons/fa'
+import { FaLinkedin, FaLinkedinIn } from 'react-icons/fa'
 import { RiInstagramFill } from 'react-icons/ri'
 import { AiOutlineYoutube } from 'react-icons/ai'
 import { MdLocationOn, MdOutlineLocationOn } from 'react-icons/md'
@@ -60,7 +60,7 @@ const Page = () => {
                         maxWidth="100px"
                         display="inline-block"
                         borderRadius="full" 
-                        src={useColorModeValue('/images/pfp.jpg', '/images/pfp3.png')}
+                        src={useColorModeValue('/images/pfp.jpg', '/images/pfp2.jpg')}
                         alt="Profile Picture"
                         />
                     </Box>
@@ -90,7 +90,7 @@ const Page = () => {
                     Hello there! I'm Justin, and I'm interested in all things firmware and embedded related (software/web stuff is kinda cool too). 
                     I'm currently working an 8 month co-op term with Motorola Solutions, Avigilon, handling the automation and development of our test
                     frameworks and procedures. I validate the SoC firmware, web user interfaces, manufacturing processes, and our VMS client/server applications for our security IP camera products. 
-                    After this current work term, I'll be looking for another co-op opportunity to try out something new in January 2023.
+                    After this current work term, I'll be starting a new co-op position as a Firmware Engineer with Solidigm from Jan - Aug 2023.
             </Paragraph>
             </Section>
 
@@ -210,6 +210,17 @@ const Page = () => {
                     </Link>
                 </ListItem>
                 <ListItem>
+                    <Link href="https://www.linkedin.com/company/ubc-mars-colony/" target="_blank">
+                            <Button
+                                variant="ghost"
+                                leftIcon={<FaLinkedin />}
+                                colorScheme={useColorModeValue('purple', 'pink')}
+                            >    
+                            LinkedIn
+                            </Button>
+                    </Link>
+                </ListItem>
+                <ListItem>
                     <Link href="https://www.instagram.com/ubcmarscolony/?hl=en" target="_blank">
                             <Button
                                 variant="ghost"
@@ -243,14 +254,14 @@ const Page = () => {
             <p><code><u>site reference</u></code></p>
             </Heading>
             <Paragraph>
-                I'm not a pro at React, and I'm also not a web developer. 
-                The majority of this site's frontend is <i>NOT</i> my original work. Go check out the work from Takuya Matsuyama. 
+                I'm not a pro at react, and I'm also not a web developer. 
+                The majority of this site's frontend references work that's not my own. Go check out the work from Takuya Matsuyama. 
                 He also has a cool spinning dog and makes great videos.
             </Paragraph>
             </Section>
 
             <Section delay={0.5}>
-                <Code>&gt; the backend is all me tho ;)</Code>
+                <Code>&gt; although I do plan on developing the backend on my own ;)</Code>
             </Section>
 
             <List>

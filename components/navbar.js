@@ -77,6 +77,9 @@ const Navbar = props => {
           <LinkItem href="/projects" path={path}>
             <code>projects</code>
           </LinkItem>
+          <LinkItem href="/resume" path={path}>
+            <code>resume</code>
+          </LinkItem>
           <LinkItem href="/gallery" path={path}>
             <code>gallery</code>
           </LinkItem>
