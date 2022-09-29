@@ -2,7 +2,7 @@
 
 This is just a basic website that I made for future projects down the road. It's very much a work in progress, but you can still check it out at [ngjstn.com](http://ngjstn.com) 
 
-The website is made with React frontend and Node express backend, hosted with Heroku cloud service. The frontend was heavily referenced using Takuya Matsuyama's work, which you can find [here](https://github.com/craftzdog/craftzdog-homepage). 
+The website is made with React frontend and Node express backend, hosted with Vercel cloud service. The frontend was heavily referenced using Takuya Matsuyama's work, which you can find [here](https://github.com/craftzdog/craftzdog-homepage). 
 
 ---
 
@@ -58,7 +58,7 @@ Once it's finished successfully deploying, it should at least be accessible at [
 
 --- 
 
-### Manual SSL Certificate Generation with Cerbot
+### Manual SSL Certificate Generation with Certbot
 
 > *Since Vercel automatically generates SSL certificates for you, this isn't needed. What's funny is that Heroku will tell you that if you don't have the paid subscription, you can only upload manually generated certificates, but what they don't tell you is that you still need to pay to upload them (?!?). Just use Vercel smh*
 
@@ -72,7 +72,7 @@ Make sure to have Cerbot installed on your machine
 Next we need to authenticate that the domain is actually own by us using a DNS challenge. Run the following command and follow the instructions given in terminal: 
 
 ```
-cerbot certonly --manual -d example.com --agree-tos-manual-public-ip-logging-ok-preferred-challenges dns-01 --server https://acme-v02.api.letsencrypt.org/directory --register-unsafely-without-email --rsa-key-size 4096
+certbot certonly --manual -d example.com --agree-tos-manual-public-ip-logging-ok-preferred-challenges dns-01 --server https://acme-v02.api.letsencrypt.org/directory --register-unsafely-without-email --rsa-key-size 4096
 ```
 
 You essentially need to create a `DNS TXT` record under a name that looks something like `_acme-challenge.exampledomain.com`, with the value of the random string that was generated. 

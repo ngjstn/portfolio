@@ -277,17 +277,6 @@ const Page = () => {
                     </Link>
                 </ListItem>
                 <ListItem>
-                    <Link href="https://www.craftz.dog/" target="_blank">
-                            <Button
-                                variant="ghost"
-                                leftIcon={<GiSittingDog />}
-                                colorScheme={useColorModeValue('purple', 'pink')}
-                            >    
-                            Takuya Matsuyama
-                            </Button>
-                    </Link>
-                </ListItem>
-                <ListItem>
                     <Link href="https://www.youtube.com/c/devaslife" target="_blank">
                             <Button
                                 variant="ghost"
