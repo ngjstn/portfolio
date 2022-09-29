@@ -41,7 +41,7 @@ const Works = () => {
         </Heading>
 
         <Section>
-        <Code>Last Updated: Sep 21, 2023</Code>
+        <Code>Last Updated: Sep 21, 2022</Code>
             {/* <nav>
                 <button onClick={goToPrevPage}><Code>Prev</Code></button>
                 
