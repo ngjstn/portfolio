@@ -74,15 +74,6 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/projects" path={path}>
-            <code>projects</code>
-          </LinkItem>
-          <LinkItem href="/resume" path={path}>
-            <code>resume</code>
-          </LinkItem>
-          <LinkItem href="/gallery" path={path}>
-            <code>gallery</code>
-          </LinkItem>
           <LinkItem
             target="_blank"
             href="https://github.com/ngjstn"
@@ -115,7 +106,16 @@ const Navbar = props => {
             pl={2}
           >
             <RiInstagramFill />
-            </LinkItem>
+          </LinkItem>
+          <LinkItem href="/projects" path={path}>
+            <code>projects</code>
+          </LinkItem>
+          <LinkItem href="/resume" path={path}>
+            <code>resume</code>
+          </LinkItem>
+          <LinkItem href="/gallery" path={path}>
+            <code>gallery</code>
+          </LinkItem>
  
         </Stack>
 
