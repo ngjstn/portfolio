@@ -30,7 +30,7 @@ const Logo = () => {
                         fontFamily='M PLUS Rounded 1c'
                         fontWeight="bold"
                         ml={3}>
-                            <code>jstn_ng</code>
+                            <code>ngjstn</code>
                     </Text>
                 </LogoBox>
             </a>

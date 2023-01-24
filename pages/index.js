@@ -42,9 +42,9 @@ const Page = () => {
                     <Heading as="h2" variant="page-title">
                         <code>justin ng</code>
                     </Heading>
-                    <p>Firmware Validation Co-op @ Motorola Solutions</p>
+                    <p>firmware engineer @ Solidigm</p>
                     {/* <MdOutlineLocationOn /> */}
-                    <Code colorScheme={useColorModeValue('pink', 'blue')}>Vancouver, BC</Code>
+                    <Code colorScheme={useColorModeValue('red', 'purple')}>Vancouver, BC</Code>
                 </Box>
                 <Box>
                     <Box 
@@ -60,7 +60,7 @@ const Page = () => {
                         maxWidth="100px"
                         display="inline-block"
                         borderRadius="full" 
-                        src={useColorModeValue('/images/pfp.jpg', '/images/pfp2.jpg')}
+                        src={useColorModeValue('/images/pfp2.jpg', '/images/pfp5.png')}
                         alt="Profile Picture"
                         />
                     </Box>
@@ -74,7 +74,7 @@ const Page = () => {
             bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} 
             p={0.5} align="center" 
             mb={6}>
-                <code>{useColorModeValue('ouch turn the lights off >:(', 'idk what im doing lol')}</code>
+                <code>{useColorModeValue('ouch turn the lights off', 'zzz')}</code>
             </Box>
             <Section></Section>
 
@@ -88,9 +88,9 @@ const Page = () => {
             {/* <VoxelDog /> */}
             <Paragraph>
                     Hello there! I'm Justin, and I'm interested in all things firmware and embedded related (software/web stuff is kinda cool too). 
-                    I'm currently working an 8 month co-op term with Motorola Solutions, Avigilon, handling the automation and development of our test
-                    frameworks and procedures. I validate the SoC firmware, web user interfaces, manufacturing processes, and our VMS client/server applications for our security IP camera products. 
-                    After this current work term, I'll be starting a new co-op position as a Firmware Engineer with Solidigm from Jan - Aug 2023.
+                    I'm currently working an 8 month co-op term with Solidigm as a Firmware Engineer. My team is involved in the development of 
+                    Solid State Drives (SSDs) in the NAND Product Solutions Group, and we're involved in projects alongside SK Hynix following the aquisition
+                    of Intel's memory business. 
             </Paragraph>
             </Section>
 
@@ -103,7 +103,7 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<FiGithub />}
-                                colorScheme={useColorModeValue('purple', 'pink')}
+                                colorScheme={useColorModeValue('yellow', 'blue')}
                             >    
                             Github
                             </Button>
@@ -114,23 +114,23 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<FaLinkedinIn />}
-                                colorScheme={useColorModeValue('purple', 'pink')}
+                                colorScheme={useColorModeValue('yellow', 'blue')}
                             >    
                             LinkedIn
                             </Button>
                     </Link>
                 </ListItem>
-                <ListItem>
+                {/* <ListItem>
                     <Link href="https://www.instagram.com/jstn_ng/?hl=en" target="_blank">
                             <Button
                                 variant="ghost"
                                 leftIcon={<IoLogoInstagram />}
-                                colorScheme={useColorModeValue('purple', 'pink')}
+                                colorScheme={useColorModeValue('yellow', 'blue')}
                             >    
                             @jstn_ng
                             </Button>
                     </Link>
-                </ListItem>
+                </ListItem> */}
             </List>
             </Section>
 
@@ -153,7 +153,7 @@ const Page = () => {
             
             <Section delay={0.3}>
                 <Paragraph>
-                    Oh, I'm also part of an engineering design team called Mars Colony. Our current project is to prototype and design a functioning Sabatier Reactor
+                    Also, I'm part of an engineering design team called Mars Colony. Our current project is to prototype and design a functioning Sabatier Reactor
                     to refuel starships using only resources found on Mars. I'm working on the RTOS firmware for the electrical control system for the reactor, as well as some basic PCB design.
                 </Paragraph>
             </Section>
@@ -203,7 +203,7 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<TbAlien />}
-                                colorScheme={useColorModeValue('purple', 'pink')}
+                                colorScheme={useColorModeValue('yellow', 'blue')}
                             >    
                             Team Website
                             </Button>
@@ -214,7 +214,7 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<FaLinkedin />}
-                                colorScheme={useColorModeValue('purple', 'pink')}
+                                colorScheme={useColorModeValue('yellow', 'blue')}
                             >    
                             LinkedIn
                             </Button>
@@ -225,7 +225,7 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<IoLogoInstagram />}
-                                colorScheme={useColorModeValue('purple', 'pink')}
+                                colorScheme={useColorModeValue('yellow', 'blue')}
                             >    
                             @ubcmarscolony
                             </Button>
@@ -260,9 +260,6 @@ const Page = () => {
             </Paragraph>
             </Section>
 
-            <Section delay={0.5}>
-                <Code>&gt; although I do plan on developing the backend on my own ;)</Code>
-            </Section>
 
             <List>
                 <ListItem>
@@ -270,7 +267,7 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<FiGithub />}
-                                colorScheme={useColorModeValue('purple', 'pink')}
+                                colorScheme={useColorModeValue('yellow', 'blue')}
                             >    
                             craftzdog
                             </Button>
@@ -281,7 +278,7 @@ const Page = () => {
                             <Button
                                 variant="ghost"
                                 leftIcon={<AiOutlineYoutube />}
-                                colorScheme={useColorModeValue('purple', 'pink')}
+                                colorScheme={useColorModeValue('yellow', 'blue')}
                             >    
                             devaslife
                             </Button>

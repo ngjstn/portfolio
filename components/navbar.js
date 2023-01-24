@@ -96,7 +96,7 @@ const Navbar = props => {
           >
             <FaLinkedinIn />
             </LinkItem>
-            <LinkItem
+            {/* <LinkItem
             target="_blank"
             href="https://www.instagram.com/jstn_ng/?hl=en"
             path={path}
@@ -106,7 +106,7 @@ const Navbar = props => {
             pl={2}
           >
             <RiInstagramFill />
-          </LinkItem>
+          </LinkItem> */}
           <LinkItem href="/projects" path={path}>
             <code>projects</code>
           </LinkItem>
