@@ -17,7 +17,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { FiGithub } from 'react-icons/fi'
-import { FaLinkedinIn } from 'react-icons/fa'
+import { FaLinkedinIn, FaHamburger } from 'react-icons/fa'
 import { RiInstagramFill } from 'react-icons/ri'
 
 
@@ -126,16 +126,19 @@ const Navbar = props => {
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
-                icon={<HamburgerIcon />}
+                icon={<FaHamburger />}
                 variant="outline"
                 aria-label="Options"
               />
               <MenuList>
                 <NextLink href="/projects" passHref>
-                  <MenuItem as={Link}>projects</MenuItem>
+                  <MenuItem as={Link}><code>PROJECTS</code></MenuItem>
                 </NextLink>
                 <NextLink href="/gallery" passHref>
-                  <MenuItem as={Link}>gallery</MenuItem>
+                  <MenuItem as={Link}><coed>GALLERY</coed></MenuItem>
+                </NextLink>
+                <NextLink href="/resume" passHref>
+                  <MenuItem as={Link}><code>RESUME</code></MenuItem>
                 </NextLink>
                 <MenuItem as={Link} href="https://www.instagram.com/jstn_ng/?hl=en"></MenuItem>
                 <MenuItem as={Link} href="https://github.com/ngjstn"></MenuItem>
