@@ -60,7 +60,7 @@ const Page = () => {
                         maxWidth="100px"
                         display="inline-block"
                         borderRadius="full" 
-                        src={useColorModeValue('/images/pfp2.jpg', '/images/pfp5.png')}
+                        src={useColorModeValue('/images/pfp2.jpg', '/images/pfp6.png')}
                         alt="Profile Picture"
                         />
                     </Box>
