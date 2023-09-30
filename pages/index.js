@@ -15,6 +15,8 @@ import thumbElec from '../public/images/projects/elec_team.png'
 import thumbWater from '../public/images/projects/water.png'
 import thumbHeat from '../public/images/projects/heat.png' 
 import thumbElec2 from '../public/images/projects/elec_team2.jpg'
+import solidigm1 from '../public/images/projects/solidigm1.jpg'
+import solidigm2 from '../public/images/projects/solidigm2.jpg'
 import { GiPlanetConquest } from 'react-icons/gi'
 import { TbAlien } from 'react-icons/tb'
 // import VoxelDog from '../components/voxel-dog'
@@ -42,7 +44,7 @@ const Page = () => {
                     <Heading as="h2" variant="page-title">
                         <code>justin ng</code>
                     </Heading>
-                    <p>firmware engineer @ Solidigm</p>
+                    <p>jobless @ school</p>
                     {/* <MdOutlineLocationOn /> */}
                     <Code colorScheme={useColorModeValue('red', 'purple')}>Vancouver, BC</Code>
                 </Box>
@@ -87,14 +89,16 @@ const Page = () => {
             </Heading>
             {/* <VoxelDog /> */}
             <Paragraph>
-                    Hello there! I'm Justin, and I'm interested in all things firmware and embedded related (software/web stuff is kinda cool too). 
-                    I'm currently working an 8 month co-op term with Solidigm as a Firmware Engineer. My team is involved in the development of 
-                    Solid State Drives (SSDs) in the NAND Product Solutions Group, and we're involved in projects alongside SK Hynix following the aquisition
-                    of Intel's memory business. 
+                    Hello there! I'm Justin, and I'm interested in all things firmware and embedded systems related. 
+                    I previously worked an 8 month co-op term with Solidigm as a Firmware Engineer working in the development of 
+                    Solid State Drives (SSDs) in the NAND Product Solutions Group.  
+            </Paragraph>
+            <Section></Section>
+            <Paragraph>
+                    Some of my hobbies include badminton, table tennis, skiing, mechanical keyboards, and complaining about the garbage weather in Vancouver.
             </Paragraph>
             </Section>
 
-         
 
             <Section delay={0.1}>
                 <List>
@@ -141,11 +145,11 @@ const Page = () => {
                 as="h3"
                 variant="section-title"
             >
-            <p><code><u>education</u></code></p>
+            <p><code><u>firmware engineer @ solidigm</u></code></p>
+            <Code colorScheme={useColorModeValue('red', 'purple')}>Jan - Aug 2023</Code>
             </Heading>
             <Paragraph>
-                I'm a third year standing computer engineering (BASc.) student at the University of British Columbia. 
-                My courses have mainly revolved around low level computer architecture, digital logic system design, software construction, and data structures & algorithms.
+                My most recent co-op term was at Solidigm, where I worked on firmware development on the Direct Memory Access (DMA) team, Flash Translation Layer domain. 
             </Paragraph>
             </Section>
 
@@ -153,8 +157,55 @@ const Page = () => {
             
             <Section delay={0.3}>
                 <Paragraph>
-                    Also, I'm part of an engineering design team called Mars Colony. Our current project is to prototype and design a functioning Sabatier Reactor
-                    to refuel starships using only resources found on Mars. I'm working on the RTOS firmware for the electrical control system for the reactor, as well as some basic PCB design.
+                DMA functionality is essentially the transfer of data to/from the SSD controller. The host machine sends NVMe commands to the SSD, which contain operations
+                to execute on host memory addresses. My focus here is on the memory addresses (stored as SGL and PRP structures), which is what we need to read/write to/from. 
+                The process of fetching the data from the host memory addresses into controller memory, and preparing the data payloads to be sent to the NAND flash is the basis
+                for the work that I did here.
+                </Paragraph>
+            </Section>
+            <Divider />
+
+            <Section delay={0.3}>
+            <SimpleGrid columns={1} gap={6}>
+            
+            <WorkGridItem
+            id=""
+            title=""
+            thumbnail={solidigm2}
+            >
+              <code>co-op LDO</code>
+            </WorkGridItem>
+{/*        
+            <WorkGridItem
+            id=""
+            title=""
+            thumbnail={solidigm1}
+            >
+              <code>heat element testing</code>
+            </WorkGridItem> */}
+            </SimpleGrid>
+            </Section>
+            <Divider />
+
+            <Section delay={0.3}>
+            <Heading
+                as="h3"
+                variant="section-title"
+            >
+            <p><code><u>education</u></code></p>
+            </Heading>
+            <Paragraph>
+                I'm a computer engineering (BASc.) student at the University of British Columbia. 
+                My courses have mainly revolved around computer architecture, digital logic design, operating systems, and embedded systems.
+            </Paragraph>
+            </Section>
+
+            <Section></Section>
+            
+            <Section delay={0.3}>
+                <Paragraph>
+                    I was previously part of an engineering design team called Mars Colony, where I was the team lead for electrical and firmware development. I worked on the Sabatier Reactor project, which is a system that converts carbon dioxide and hydrogen into water and methane.
+                    I'm worked on the RTOS firmware for the electrical control system used in the reactor, as well as some basic PCB design.
                 </Paragraph>
             </Section>
 
@@ -174,7 +225,7 @@ const Page = () => {
             title=""
             thumbnail={thumbHeat}
             >
-              <code>heat tape element</code>
+              <code>heat element testing</code>
             </WorkGridItem>
 
             <WorkGridItem
@@ -182,7 +233,7 @@ const Page = () => {
             title=""
             thumbnail={thumbElec2}
             >
-              <code>more reactor testing</code>
+              <code>more reactor design</code>
             </WorkGridItem>
 
             <WorkGridItem
@@ -190,7 +241,7 @@ const Page = () => {
             title=""
             thumbnail={thumbWater}
             >
-              <code>wow we made some water</code>
+              <code>wow we made some water!</code>
             </WorkGridItem>
 
             </SimpleGrid>
