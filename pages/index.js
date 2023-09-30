@@ -79,19 +79,19 @@ const Page = () => {
                 <code>{useColorModeValue('ouch turn the lights off', 'zzz')}</code>
             </Box>
             <Section></Section>
-
+            <Divider />
             <Section delay={0.1}> 
             <Heading 
             as="h3" 
             variant="section-title"
             >
-            <p><code><u>about me</u></code></p>
+            <p><code>about me</code></p>
             </Heading>
             {/* <VoxelDog /> */}
             <Paragraph>
                     Hello there! I'm Justin, and I'm interested in all things firmware and embedded systems related. 
                     I previously worked an 8 month co-op term with Solidigm as a Firmware Engineer working in the development of 
-                    Solid State Drives (SSDs) in the NAND Product Solutions Group.  
+                    solid-state drives (SSDs).  
             </Paragraph>
             <Section></Section>
             <Paragraph>
@@ -145,11 +145,12 @@ const Page = () => {
                 as="h3"
                 variant="section-title"
             >
-            <p><code><u>firmware engineer @ solidigm</u></code></p>
+            <p><code>firmware @ solidigm</code></p>
             <Code colorScheme={useColorModeValue('red', 'purple')}>Jan - Aug 2023</Code>
             </Heading>
             <Paragraph>
                 My most recent co-op term was at Solidigm, where I worked on firmware development on the Direct Memory Access (DMA) team, Flash Translation Layer domain. 
+                
             </Paragraph>
             </Section>
 
@@ -158,7 +159,7 @@ const Page = () => {
             <Section delay={0.3}>
                 <Paragraph>
                 DMA functionality is essentially the transfer of data to/from the SSD controller. The host machine sends NVMe commands to the SSD, which contain operations
-                to execute on host memory addresses. My focus here is on the memory addresses (stored as SGL and PRP structures), which is what we need to read/write to/from. 
+                to execute and where to execute them (host memory addresses). My focus here is on the memory addresses that are stored in the command (SGL and PRP structures). 
                 The process of fetching the data from the host memory addresses into controller memory, and preparing the data payloads to be sent to the NAND flash is the basis
                 for the work that I did here.
                 </Paragraph>
@@ -192,7 +193,7 @@ const Page = () => {
                 as="h3"
                 variant="section-title"
             >
-            <p><code><u>education</u></code></p>
+            <p><code>education</code></p>
             </Heading>
             <Paragraph>
                 I'm a computer engineering (BASc.) student at the University of British Columbia. 
@@ -204,8 +205,9 @@ const Page = () => {
             
             <Section delay={0.3}>
                 <Paragraph>
-                    I was previously part of an engineering design team called Mars Colony, where I was the team lead for electrical and firmware development. I worked on the Sabatier Reactor project, which is a system that converts carbon dioxide and hydrogen into water and methane.
-                    I'm worked on the RTOS firmware for the electrical control system used in the reactor, as well as some basic PCB design.
+                    I was previously part of an engineering design team called Mars Colony, where I was the team lead for electrical and firmware development on the Sabatier Reactor project. 
+                    We created a working chemical reactor using the Sabatier reaction to convert carbon dioxide and hydrogen into water and methane, which would be used for creating methalox rocket fuel.
+                    I contributed to the development of the electrical control system firmware, which ran a real-time operating system on STM32 and Arduino microcontrollers.
                 </Paragraph>
             </Section>
 
@@ -302,7 +304,7 @@ const Page = () => {
                 as="h3"
                 variant="section-title"
             >
-            <p><code><u>site reference</u></code></p>
+            <p><code>site reference</code></p>
             </Heading>
             <Paragraph>
                 I'm not a pro at react, and I'm also not a web developer. 

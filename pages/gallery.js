@@ -9,7 +9,7 @@ import thumbElec from '../public/images/projects/elec_team.png'
 import thumbWater from '../public/images/projects/water.png'
 import thumbHeat from '../public/images/projects/heat.png' 
 import thumbElec2 from '../public/images/projects/elec_team2.jpg'
-
+import solidigm2 from '../public/images/projects/solidigm2.jpg'
 
 const Works = () => {
   return (
@@ -21,6 +21,12 @@ const Works = () => {
       <SimpleGrid column={1} gap={6}>
 
         <Section>
+        <WorkGridItem
+          id="co-op LDO"
+          title=""
+          thumbnail={solidigm2}
+          >
+          </WorkGridItem>
 
           <WorkGridItem
           id="team1"
