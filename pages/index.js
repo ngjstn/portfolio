@@ -1,51 +1,31 @@
-import { Container, Heading, Box, Image, useColorModeValue, Button, Code, Link, ListItem, List, Divider, SimpleGrid, GridItem } from '@chakra-ui/react'
+import { Container, Heading, Box, Image, useColorModeValue, Button, Code, Link, ListItem, List, Divider, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
-import { IoLogoGithub, IoLogoInstagram } from 'react-icons/io5'
-import { GiSittingDog } from 'react-icons/gi'
+import { IoLogoInstagram } from 'react-icons/io5'
 import { FiGithub } from 'react-icons/fi'
 import { FaLinkedin, FaLinkedinIn } from 'react-icons/fa'
-import { RiInstagramFill } from 'react-icons/ri'
 import { AiOutlineYoutube } from 'react-icons/ai'
-import { MdLocationOn, MdOutlineLocationOn } from 'react-icons/md'
 import { WorkGridItem } from '../components/grid-item'
-// import thumbSabatier from '../public/images/projects/sabatier.png'
 import thumbElec from '../public/images/projects/elec_team.png'
 import thumbWater from '../public/images/projects/water.png'
 import thumbHeat from '../public/images/projects/heat.png' 
 import thumbElec2 from '../public/images/projects/elec_team2.jpg'
-import solidigm1 from '../public/images/projects/solidigm1.jpg'
 import solidigm2 from '../public/images/projects/solidigm2.jpg'
-import { GiPlanetConquest } from 'react-icons/gi'
 import { TbAlien } from 'react-icons/tb'
-// import VoxelDog from '../components/voxel-dog'
-import dynamic from 'next/dynamic'
-// import VoxelDogLoader from '../components/voxel-dog-loader'
-// import { IoLocationOutline } from 'react-icons/io'
-// import Fonts from '../components/fonts'
-// import VoxelDog from '../components/voxel-dog'
-
-// const LazyVoxelDog = dynamic(() => import('../components/voxel-dog'), {
-//     ssr: false,
-//     loading: () => <VoxelDogLoader />
-//   })
 
 
 const Page = () => {
     return (
         <Layout>
         <Container>
-            {/* <Fonts /> */}
             <Section></Section>
-            {/* <LazyVoxelDog /> */}
             <Box display={{md:'flex'}}>
                 <Box flexGrow={1}>
                     <Heading as="h2" variant="page-title">
                         <code>justin ng</code>
                     </Heading>
                     <p>jobless @ school</p>
-                    {/* <MdOutlineLocationOn /> */}
                     <Code colorScheme={useColorModeValue('red', 'purple')}>Vancouver, BC</Code>
                 </Box>
                 <Box>
@@ -62,7 +42,7 @@ const Page = () => {
                         maxWidth="100px"
                         display="inline-block"
                         borderRadius="full" 
-                        src={useColorModeValue('/images/pfp2.jpg', '/images/pfp6.png')}
+                        src={useColorModeValue('/images/pfp6.png', '/images/pfp7.jpg')}
                         alt="Profile Picture"
                         />
                     </Box>
@@ -87,18 +67,16 @@ const Page = () => {
             >
             <p><code>about me</code></p>
             </Heading>
-            {/* <VoxelDog /> */}
             <Paragraph>
                     Hello there! I'm Justin, and I'm interested in all things firmware and embedded systems related. 
                     I previously worked an 8 month co-op term with Solidigm as a Firmware Engineer working in the development of 
-                    solid-state drives (SSDs).  
+                    enterprise solid-state drives.  
             </Paragraph>
             <Section></Section>
             <Paragraph>
-                    Some of my hobbies include badminton, table tennis, skiing, mechanical keyboards, and complaining about the garbage weather in Vancouver.
+                    Some of my hobbies include bouldering (climbing), badminton, skiing, coffee, mechanical keyboards, and complaining about the garbage weather in Vancouver.
             </Paragraph>
             </Section>
-
 
             <Section delay={0.1}>
                 <List>
@@ -124,17 +102,6 @@ const Page = () => {
                             </Button>
                     </Link>
                 </ListItem>
-                {/* <ListItem>
-                    <Link href="https://www.instagram.com/jstn_ng/?hl=en" target="_blank">
-                            <Button
-                                variant="ghost"
-                                leftIcon={<IoLogoInstagram />}
-                                colorScheme={useColorModeValue('yellow', 'blue')}
-                            >    
-                            @jstn_ng
-                            </Button>
-                    </Link>
-                </ListItem> */}
             </List>
             </Section>
 
@@ -150,7 +117,7 @@ const Page = () => {
             </Heading>
             <Paragraph>
                 My most recent co-op term was at Solidigm, where I worked on firmware development on the Direct Memory Access (DMA) team, Flash Translation Layer domain. 
-                
+                Solidigm used to be a division of Intel until it was acquired by SK hynix in 2020.
             </Paragraph>
             </Section>
 
@@ -174,16 +141,8 @@ const Page = () => {
             title=""
             thumbnail={solidigm2}
             >
-              <code>co-op LDO</code>
+              <code></code>
             </WorkGridItem>
-{/*        
-            <WorkGridItem
-            id=""
-            title=""
-            thumbnail={solidigm1}
-            >
-              <code>heat element testing</code>
-            </WorkGridItem> */}
             </SimpleGrid>
             </Section>
             <Divider />
@@ -193,7 +152,8 @@ const Page = () => {
                 as="h3"
                 variant="section-title"
             >
-            <p><code>education</code></p>
+            <p><code>education @ ubc</code></p>
+            <Code colorScheme={useColorModeValue('red', 'purple')}>2020 - Expected 2025 Graduation</Code>
             </Heading>
             <Paragraph>
                 I'm a computer engineering (BASc.) student at the University of British Columbia. 
@@ -207,7 +167,7 @@ const Page = () => {
                 <Paragraph>
                     I was previously part of an engineering design team called Mars Colony, where I was the team lead for electrical and firmware development on the Sabatier Reactor project. 
                     We created a working chemical reactor using the Sabatier reaction to convert carbon dioxide and hydrogen into water and methane, which would be used for creating methalox rocket fuel.
-                    I contributed to the development of the electrical control system firmware, which ran a real-time operating system on STM32 and Arduino microcontrollers.
+                    I contributed to the development of the electrical control system firmware, which ran a real-time operating system on an STM32 and Arduino microcontrollers.
                 </Paragraph>
             </Section>
 
@@ -227,7 +187,7 @@ const Page = () => {
             title=""
             thumbnail={thumbHeat}
             >
-              <code>heat element testing</code>
+              <code>heat element test</code>
             </WorkGridItem>
 
             <WorkGridItem
@@ -235,7 +195,7 @@ const Page = () => {
             title=""
             thumbnail={thumbElec2}
             >
-              <code>more reactor design</code>
+              <code>system code review</code>
             </WorkGridItem>
 
             <WorkGridItem
@@ -243,7 +203,7 @@ const Page = () => {
             title=""
             thumbnail={thumbWater}
             >
-              <code>wow we made some water!</code>
+              <code>we produced water!</code>
             </WorkGridItem>
 
             </SimpleGrid>
@@ -287,15 +247,6 @@ const Page = () => {
             </List>
 
             <Section></Section>
-            
-            {/* <Section delay={0.5}>
-                <Heading
-                as="h3"
-                variant="section-title"
-                >
-                <p><code>Interests</code></p>
-                </Heading>
-            </Section> */}
 
             <Divider />
 
@@ -307,9 +258,9 @@ const Page = () => {
             <p><code>site reference</code></p>
             </Heading>
             <Paragraph>
-                I'm not a pro at react, and I'm also not a web developer. 
-                The majority of this site's frontend references work that's not my own. Go check out the work from Takuya Matsuyama. 
-                He also has a cool spinning dog and makes great videos.
+                PSA I'm not a web developer. 
+                The majority of this site's frontend references designs that are not my own. Go check out the work from Takuya Matsuyama. 
+                He has a spinning dog and makes some pretty cool videos.
             </Paragraph>
             </Section>
 
