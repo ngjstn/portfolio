@@ -3,12 +3,16 @@ import {
   Heading,
   Container,
   Divider,
-  useColorModeValue} from '@chakra-ui/react'
+  useColorModeValue,
+  Link,
+  Button } from '@chakra-ui/react'
 import { Code } from '@chakra-ui/react'
 import Section from '../components/section'
 import { Inter } from 'next/font/google'
+import { SiNotion } from "react-icons/si"
 
 const inter = Inter({ subsets: ['latin'], styles: ['light'], weight: ['300'] })
+const inter_heavy = Inter({ subsets: ['latin'], styles: ['light'], weight: ['500'] })
 
 const Works = () => {
   return (
@@ -19,12 +23,22 @@ const Works = () => {
     <Section>
     <Heading as="h1"><code>list of courses</code></Heading>
     <p className={inter.className}>Bachelor of Applied Science in Computer Engineering @ UBC</p>
+    
       <Box my={6} align="left">
       <Code>COMPLETED</Code>
       <p><Code colorScheme='pink'>IN-PROGRESS</Code></p>
       <p><Code colorScheme='blue'>PLANNED</Code></p>
       <Divider my={6} />
-      <Section></Section>
+      <Link href="https://ubcece.notion.site/BASc-Computer-Engineering-Checklist-2021-5b8b0884e56f438fa9c29f2f30df3705" target="_blank">
+        <Button
+            variant="ghost"
+            leftIcon={<SiNotion />}
+            colorScheme={useColorModeValue('yellow', 'blue')}
+        >    
+        <p className={inter_heavy.className}>2021 CPEN Course Requirements Checklist</p>
+        </Button>
+      </Link>
+      <Divider my={6} />
 
       <Heading as="h2" variant="section-title"><code>[CPEN] Computer Engineering</code></Heading>
       <p className={inter.className}><Code>CPEN 211</Code> Computing Systems I</p>
