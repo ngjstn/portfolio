@@ -14,11 +14,12 @@ import {
   IconButton,
   useColorModeValue
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { FiGithub } from 'react-icons/fi'
 import { FaLinkedinIn, FaHamburger } from 'react-icons/fa'
-import { RiInstagramFill } from 'react-icons/ri'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'], styles: ['light'], weight: ['300'] })
 
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
@@ -123,17 +124,21 @@ const Navbar = props => {
               />
               <MenuList>
                 <NextLink href="/projects" passHref legacyBehavior>
-                  <MenuItem as={Link}><code>PROJECTS</code></MenuItem>
+                  <MenuItem as={Link}><p className={inter.className}>Projects</p></MenuItem>
                 </NextLink>
                 <NextLink href="/gallery" passHref legacyBehavior>
-                  <MenuItem as={Link}><coed>GALLERY</coed></MenuItem>
+                  <MenuItem as={Link}><p className={inter.className}>Gallery</p></MenuItem>
                 </NextLink>
                 <NextLink href="/resume" passHref legacyBehavior>
-                  <MenuItem as={Link}><code>RESUME</code></MenuItem>
+                  <MenuItem as={Link}><p className={inter.className}>Resume</p></MenuItem>
                 </NextLink>
-                <MenuItem as={Link} href="https://www.instagram.com/jstn_ng/?hl=en"></MenuItem>
-                <MenuItem as={Link} href="https://github.com/ngjstn"></MenuItem>
-                <MenuItem as={Link} href="https://www.linkedin.com/in/ngjstn/"></MenuItem>
+                <NextLink href="/courses" passHref legacyBehavior>
+                  <MenuItem as={Link}><p className={inter.className}>Courses</p></MenuItem>
+                </NextLink>
+            
+                <MenuItem as={Link} href="https://github.com/ngjstn"><p className={inter.className}>Github</p></MenuItem>
+                <MenuItem as={Link} href="https://www.linkedin.com/in/ngjstn/"><p className={inter.className}>LinkedIn</p></MenuItem>
+                
               </MenuList>
             </Menu>
           </Box>
