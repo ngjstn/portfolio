@@ -1,18 +1,8 @@
-import NextLink from 'next/link'
 import {
-  Box,
   Heading,
-  Text,
-  Container,
-  Divider,
-  Button,
-  useColorModeValue,
-  useColorMode,
-  SimpleGrid
-} from '@chakra-ui/react'
+  Container} from '@chakra-ui/react'
 import { Code } from '@chakra-ui/react'
 import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
 
 import { useState } from 'react'
 import { Document, Page, pdfjs } from "react-pdf"
@@ -26,35 +16,18 @@ const Works = () => {
 		setNumPages(numPages);
 	};
 
-	const goToPrevPage = () =>
-		setPageNumber(pageNumber - 1 <= 1 ? 1 : pageNumber - 1);
-
-	const goToNextPage = () =>
-		setPageNumber(
-			pageNumber + 1 >= numPages ? numPages : pageNumber + 1,
-		);
 
     return (
         <Container>
         <Heading as="h3" fontSize={20} mb={4}>
-        <code>resume</code>
+        <code>&gt; resume</code>
         </Heading>
-
+        
         <Section>
-        <Code>Last Updated: Sep 21, 2022</Code>
-            {/* <nav>
-                <button onClick={goToPrevPage}><Code>Prev</Code></button>
-                
-                <button onClick={goToNextPage}><Code>Next</Code></button>
-                <p>
-                <code>
-                Page {pageNumber} of {numPages}
-                </code>
-                </p>
-            </nav> */}
+        <Code>Last Updated: Jan 18, 2024</Code>
 
             <Document
-				file="resume.pdf"
+				file="resume2.pdf"
 				onLoadSuccess={onDocumentLoadSuccess}
                 onLoadError={console.error}
 			>

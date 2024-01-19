@@ -1,10 +1,6 @@
-import { Container, Heading, SimpleGrid, Divider, Code } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-
-// import thumbMarsColony from '../public/images/projects/mars_colony.png'
-import thumbWallpaper from '../public/images/projects/wallpaper.jpg'
-import { useColorModeValue } from '@chakra-ui/react'
 import thumbElec from '../public/images/projects/elec_team.png'
 import thumbWater from '../public/images/projects/water.png'
 import thumbHeat from '../public/images/projects/heat.png' 
@@ -15,7 +11,7 @@ const Works = () => {
   return (
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        <code>gallery</code>
+        <code>&gt; gallery</code>
       </Heading>
 
       <SimpleGrid column={1} gap={6}>

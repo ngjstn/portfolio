@@ -3,19 +3,12 @@ import Layout from '../components/layouts/main'
 import theme from '../lib/theme'
 import { AnimatePresence } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import { Inter } from 'next/font/google'
 
-// const dev = process.env.NODE_ENV !== 'production'; 
-// const port = process.env.PORT || 3000; 
-
+const inter = Inter({ subsets: ['latin'] })
 
 const Website = ({ Component, pageProps, router }) => {
-    // if (dev) {
-    //     var url = `http://localhost:${port}`;
-    // } else {
-    //     var url = `ngjstn-website.herokuapp.com`;
-    // }
-
-    const [backendData, setBackendData] = useState([{}])
+    const [, setBackendData] = useState([{}])
 
     useEffect(() => {
         fetch('/api').then(

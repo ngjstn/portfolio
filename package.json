@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "eslint": "^8.20.0",
-    "eslint-config-next": "^12.2.3",
+    "eslint-config-next": "^13.5.6",
     "prettier": "^2.7.1"
   },
   "name": "client",
@@ -12,6 +12,7 @@
     "@chakra-ui/icons": "^2.0.4",
     "@chakra-ui/react": "^2.2.4",
     "@emotion/react": "^11.9.3",
+    "@swc/helpers": "^0.5.3",
     "acorn": "^8.8.0",
     "acorn-jsx": "^5.3.2",
     "ajv": "^6.12.6",
@@ -127,7 +128,7 @@
     "minimist": "^1.2.6",
     "ms": "^2.1.2",
     "natural-compare": "^1.4.0",
-    "next": "^12.2.5",
+    "next": "^13.5.6",
     "object-assign": "^4.1.1",
     "object-inspect": "^1.12.2",
     "object-keys": "^1.1.1",

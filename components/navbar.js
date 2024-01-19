@@ -25,7 +25,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
-    <NextLink href={href} passHref scroll={false}>
+    <NextLink href={href} passHref scroll={false} legacyBehavior>
       <Link
         p={2}
         bg={active ? 'grassTeal' : undefined}
@@ -36,7 +36,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
         {children}
       </Link>
     </NextLink>
-  )
+  );
 }
 
 const Navbar = props => {
@@ -96,17 +96,6 @@ const Navbar = props => {
           >
             <FaLinkedinIn />
             </LinkItem>
-            {/* <LinkItem
-            target="_blank"
-            href="https://www.instagram.com/jstn_ng/?hl=en"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
-            <RiInstagramFill />
-          </LinkItem> */}
           <LinkItem href="/projects" path={path}>
             <code>projects</code>
           </LinkItem>
@@ -116,7 +105,9 @@ const Navbar = props => {
           <LinkItem href="/gallery" path={path}>
             <code>gallery</code>
           </LinkItem>
- 
+          <LinkItem href="/courses" path={path}>
+            <code>courses</code>
+          </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
@@ -131,13 +122,13 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/projects" passHref>
+                <NextLink href="/projects" passHref legacyBehavior>
                   <MenuItem as={Link}><code>PROJECTS</code></MenuItem>
                 </NextLink>
-                <NextLink href="/gallery" passHref>
+                <NextLink href="/gallery" passHref legacyBehavior>
                   <MenuItem as={Link}><coed>GALLERY</coed></MenuItem>
                 </NextLink>
-                <NextLink href="/resume" passHref>
+                <NextLink href="/resume" passHref legacyBehavior>
                   <MenuItem as={Link}><code>RESUME</code></MenuItem>
                 </NextLink>
                 <MenuItem as={Link} href="https://www.instagram.com/jstn_ng/?hl=en"></MenuItem>
@@ -149,7 +140,7 @@ const Navbar = props => {
         </Box>
       </Container>
     </Box>
-  )
+  );
 }
 
 export default Navbar
