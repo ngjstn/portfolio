@@ -144,6 +144,7 @@ const Page = () => {
             <WorkGridItem
             id=""
             title=""
+            category='gallery'
             thumbnail={solidigm2}
             >
               <code></code>
@@ -195,6 +196,7 @@ const Page = () => {
             <WorkGridItem
             id=""
             title=""
+            category='gallery'
             thumbnail={thumbElec}
             >
               <p className={inter.className}>firmware/electrical team</p>
@@ -203,6 +205,7 @@ const Page = () => {
             <WorkGridItem
             id=""
             title=""
+            category='gallery'
             thumbnail={thumbHeat}
             >
               <p className={inter.className}>heat element test</p>
@@ -211,6 +214,7 @@ const Page = () => {
             <WorkGridItem
             id=""
             title=""
+            category='gallery'
             thumbnail={thumbElec2}
             >
               <p className={inter.className}>system code review</p>
@@ -219,6 +223,7 @@ const Page = () => {
             <WorkGridItem
             id=""
             title=""
+            category='gallery'
             thumbnail={thumbWater}
             >
               <p className={inter.className}>water by-product methane evidence</p>

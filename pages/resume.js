@@ -1,9 +1,10 @@
 import {
   Heading,
-  Container} from '@chakra-ui/react'
+  Container,
+  Divider   } from '@chakra-ui/react'
 import { Code } from '@chakra-ui/react'
 import Section from '../components/section'
-
+import Layout from '../components/layouts/article'
 import { useState } from 'react'
 import { Document, Page, pdfjs } from "react-pdf"
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
@@ -18,9 +19,13 @@ const Works = () => {
 
 
     return (
+        <Layout title="Resume">
         <Container>
         <Heading as="h3" fontSize={20} mb={4}>
         <code>&gt; resume</code>
+
+        <Divider my={6} />
+
         </Heading>
         
         <Section>
@@ -36,6 +41,7 @@ const Works = () => {
             
         </Section>
     </Container>
+    </Layout>
     )
 }
 

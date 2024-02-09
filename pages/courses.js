@@ -6,6 +6,7 @@ import {
   useColorModeValue,
   Link,
   Button } from '@chakra-ui/react'
+import Layout from '../components/layouts/article'
 import { Code } from '@chakra-ui/react'
 import Section from '../components/section'
 import { Inter } from 'next/font/google'
@@ -16,6 +17,7 @@ const inter_heavy = Inter({ subsets: ['latin'], styles: ['light'], weight: ['500
 
 const Works = () => {
   return (
+    <Layout title="Courses"> 
     <Container>
     <Heading as="h3" fontSize={20} mb={4}>
       <code>&gt; courses</code>
@@ -125,6 +127,7 @@ const Works = () => {
       </Box>
     </Section>
   </Container>
+  </Layout>
   )
 }
 
