@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'], styles: ['light'], weight: ['300'] })
 export const Title = ({ children }) => (
   <Box>
     <Link as={NextLink} href="/projects">
-    <code colorScheme={useColorModeValue('red', 'purple')}>projects </code>
+    <code colorScheme={useColorModeValue('red', 'purple')}>projects</code>
     </Link>
 
     <Heading display="inline-block" as="h3" fontSize={20} mb={4}>

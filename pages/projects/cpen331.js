@@ -20,8 +20,8 @@ import {
         <Title>
           OS/161 Kernel <Badge></Badge>
         </Title>
-        <Paragraph className={inter.className}>page under construction :(</Paragraph>
-        <Paragraph className={inter.className}>please come back later</Paragraph>
+        <Paragraph className={inter.className}>Coming soon!</Paragraph>
+        {/* <Paragraph className={inter.className}>please come back later</Paragraph> */}
       </Container>
     </Layout>
   )

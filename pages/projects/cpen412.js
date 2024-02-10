@@ -15,13 +15,13 @@ import {
   const inter = Inter({ subsets: ['latin'], styles: ['light'], weight: ['300'] })
 
   const Work = () => (
-    <Layout title="Sabatier">
+    <Layout title="CPEN412">
       <Container>
         <Title>
-          Sabatier Fuel Reactor <Badge></Badge>
+          Motorola 68k CPU <Badge></Badge>
         </Title>
-        <Paragraph className={inter.className}>page under construction :(</Paragraph>
-        <Paragraph className={inter.className}>please come back later</Paragraph>
+        <Paragraph className={inter.className}></Paragraph>
+        <Paragraph className={inter.className}>Coming Soon!</Paragraph>
       </Container>
     </Layout>
   )
