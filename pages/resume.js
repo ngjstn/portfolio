@@ -29,7 +29,7 @@ const Works = () => {
         </Heading>
         
         <Section>
-        <Code>Last Updated: Jan 18, 2024</Code>
+        <Code>Last Updated: Apr 4, 2024</Code>
 
             <Document
 				file="resume2.pdf"

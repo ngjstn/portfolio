@@ -31,7 +31,7 @@ const Works = () => {
       <p><Code colorScheme='pink'>IN-PROGRESS</Code></p>
       <p><Code colorScheme='blue'>PLANNED</Code></p>
       <Divider my={6} />
-      <Link href="https://ubcece.notion.site/BASc-Computer-Engineering-Checklist-2021-5b8b0884e56f438fa9c29f2f30df3705" target="_blank">
+      {/* <Link href="https://ubcece.notion.site/BASc-Computer-Engineering-Checklist-2021-5b8b0884e56f438fa9c29f2f30df3705" target="_blank">
         <Button
             variant="ghost"
             leftIcon={<SiNotion />}
@@ -39,8 +39,8 @@ const Works = () => {
         >    
         <p className={inter_heavy.className}>2021 CPEN Course Requirements Checklist</p>
         </Button>
-      </Link>
-      <Divider my={6} />
+      </Link> */}
+      {/* <Divider my={6} /> */}
 
       <Heading as="h2" variant="section-title"><code>[CPEN] Computer Engineering</code></Heading>
       <p className={inter.className}><Code>CPEN 211</Code> Computing Systems I</p>
@@ -55,6 +55,7 @@ const Works = () => {
       <p className={inter.className}><Code colorScheme='pink'>CPEN 412</Code> Microcomputer Systems Design</p>
       <p className={inter.className}><Code colorScheme='blue'>CPEN 431</Code> Design of Distributed Software Applications</p>
       <p className={inter.className}><Code colorScheme='blue'>CPEN 432</Code> Real-Time System Design</p>
+      <p className={inter.className}><Code colorScheme='blue'>CPEN 442</Code> Introduction to Cybersecurity</p>
       <p className={inter.className}><Code>CPEN 481</Code> Economic Analysis of Engineering Projects</p>
       <p className={inter.className}><Code colorScheme='blue'>CPEN 491</Code> Capstone Design Project</p>
 
@@ -74,6 +75,7 @@ const Works = () => {
       <p className={inter.className}><Code>CPSC 221</Code> Basic Algorithms and Data Structures</p>
       <p className={inter.className}><Code colorScheme='blue'>CPSC 314</Code> Computer Graphics</p>
       <p className={inter.className}><Code colorScheme='pink'>CPSC 320</Code> Intermediate Algorithm Design and Analysis</p>
+      <p className={inter.className}><Code colorScheme='blue'>CPSC 436A</Code> Operating Systems Design and Implementation</p>
 
       <Section></Section>
       <Divider my={6} />
